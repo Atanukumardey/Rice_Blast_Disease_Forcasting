@@ -1,0 +1,8 @@
+['Processing ID', 'Class Label', 'Mean of RGB-Blue of segmented image', 'Mean of RGB-Green of segmented image', 'Mean of RGB-Red of segmented image', 'Mean of HSV-Hue of segmented image', 'Mean of HSV-Saturation of segmented image', 'Standard Deviation of RGB-Blue of segmented image', 'Standard Deviation of RGB-Green of segmented image', 'Standard Deviation of RGB-Red of segmented image', 'min-max normalized Blue-Green Histogram (16*16 bins)', 'min-max normalized Hue-Saturation Histogram (16*16 bins)', 'Skewness of diseased segment', 'Kurtosis of diseased segment', 'Standard Deviation of diseased segment', 'Average contour perimeter', 'Average contour area', 'Hu Moments (7)', 'GLCM [at distance=3, mean, angles=0,45,90,135]  Contrast', 'GLCM Correlation', 'GLCM Energy', 'GLCM Homogeneity', 'min-max normalized LBP (P, R = 24, 3.0) histogram (32 bins)']
+ 
+ Total number of features: 27
+
+ 
+ Dataset ID: rice-leaf-by-Prajapati-et-al
+
+ Images downsized to: 512x256 or lower

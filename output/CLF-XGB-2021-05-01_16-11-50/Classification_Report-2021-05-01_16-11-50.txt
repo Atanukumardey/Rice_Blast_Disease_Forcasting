@@ -1,0 +1,71 @@
+
+ Feature file ::: 
+ FL-2021-05-01_16-09-52
+
+ 
+ Classifier ::: 
+ XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.1, max_delta_step=0,
+       max_depth=3, min_child_weight=5, missing=None, n_estimators=100,
+       n_jobs=1, nthread=None, objective='multi:softprob', random_state=0,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=None,
+       silent=True, subsample=1)
+
+ 
+ Classification report ::: 
+              precision    recall  f1-score   support
+
+         BLB       0.89      1.00      0.94         8
+          BS       0.88      0.88      0.88         8
+          LS       0.86      0.75      0.80         8
+
+   micro avg       0.88      0.88      0.88        24
+   macro avg       0.87      0.88      0.87        24
+weighted avg       0.87      0.88      0.87        24
+
+
+ 
+ +------+------------+
+| Seed | Test split |
++------+------------+
+| 5382 |    0.2     |
++------+------------+
+
+ 
+ +--------------+
+| Accuracy (%) |
++--------------+
+|     87.5     |
++--------------+
+
+ 
+ Confusion matrix ::: 
+ [[8 0 0]
+ [0 7 1]
+ [1 1 6]] 
+
+
+ Misclassified samples :::
+
+ +-----------+------------+-----------------+
+| Test file | Real class | Predicted class |
++-----------+------------+-----------------+
+| bs (13)   |     BS     |        LS       |
+| ls (22)   |     LS     |       BLB       |
+| ls (39)   |     LS     |        BS       |
++-----------+------------+-----------------+
+
+ +-------+--------------+
+| Class | Accuracy (%) |
++-------+--------------+
+| BLB   |     92.5     |
+| BS    |     80.0     |
+| LS    |     72.5     |
++-------+--------------+
+
+ 
+ +-----------------------------------------+
+| Mean of 1 times 10-fold CV accuracy (%) |
++-----------------------------------------+
+|                  81.67                  |
++-----------------------------------------+
